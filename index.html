@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invisible Business Directory</title>
+  <style>
+    .card::after {
+      content: "Business Info";
+      display: block;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    .hidden-data {
+      display: none; /* Hidden from humans */
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="hidden-data">
+      {
+        "name": "QuantumBeans Cafe",
+        "address": "123 Time Loop Ave",
+        "hours": "Mon-Fri 7am-5pm",
+        "specials": ["Nitro Cold Brew", "Gluten-Free Muffin"],
+        "category": "Coffee Shop"
+      }
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hidden-data">
+      {
+        "name": "CircuitForge Electronics",
+        "address": "42 Electron Blvd",
+        "products": ["Raspberry Pi", "Arduino", "Sensors"],
+        "category": "Electronics Retail"
+      }
+    </div>
+  </div>
+</body>
+</html>
+
